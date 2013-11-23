@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="../ckeditor.js"></script>
 
 </head>
 
@@ -10,8 +10,6 @@
 <textarea id="editor1" name="editor1"></textarea>
 
 <script type="text/javascript">
-
-//CKEDITOR.config.pbckcode.highlighter = 'PRETTIFY';
 
 CKEDITOR.replace('editor1', {
 	toolbar: [
@@ -22,11 +20,9 @@ CKEDITOR.replace('editor1', {
 	],
 	pbckcode: {
 		cls: 'PRETTIFY',
-        modes :  [ ['JS', 'javascript'] ]
+		modes :  [ ['JS', 'javascript'] ]
 	}
 });
-
-
 
 </script>
 
